@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed Deposits</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Fixed Deposits</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mutualfunds.html">Mutual Funds</a>
+      <a href="gold.html">Gold Rates</a>
+      <a href="stocks.html">Stock Market</a>
+      <a href="currency.html">Currency</a>
+      <a href="news.html">News</a>
+    </nav>
+  </header>
+
+  <section class="calculator">
+    <h2>FD Calculator</h2>
+    <label>Deposit Amount (₹): <input type="number" id="amount" value="100000"></label>
+    <label>Interest Rate (%): <input type="number" id="rate" value="7.5"></label>
+    <label>Tenure (Years): <input type="number" id="years" value="5"></label>
+    <button onclick="calculateFD()">Calculate</button>
+    <p id="result"></p>
+  </section>
+
+  <section class="rates">
+    <h2>FD Interest Rates</h2>
+    <table>
+      <tr><th>Tenure</th><th>Rate (%)</th></tr>
+      <tr><td>1 Year</td><td>7.5</td></tr>
+      <tr><td>3 Years</td><td>7.75</td></tr>
+      <tr><td>5 Years</td><td>8.0</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>Disclaimer: Demo rates only.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
